@@ -8,6 +8,11 @@ export default function TableSearch(props){
     function valueChangeHandler(e){
         setValue(e.target.value)
     }
+    function onSearchKeyDown(e){
+        if(e.code === 'Enter'){
+            props.onSearch(value)
+        }
+    }
 
     return (
         <div className="input-group mb-3 mt-4">
@@ -15,6 +20,7 @@ export default function TableSearch(props){
                 type="text" 
                 className="form-control"
                 onChange={valueChangeHandler}
+                onKeyDown={onSearchKeyDown}
                 value={value}
             />
             <div className="input-group-append">
