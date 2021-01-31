@@ -42,7 +42,7 @@ function App() {
       setLoad(false)
     } catch (error) {
       setisModeSelected(false)
-      alert('Не получается получить данные с сервера!')
+      alert('Не удалось получить данные с сервера!')
     }
   }
 
