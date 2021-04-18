@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Table/Table.css"],"names":[],"mappings":"AAAA,MACI,cACJ","file":"main.7a611fa2.chunk.css","sourcesContent":["th, td{\r\n    cursor: pointer;\r\n}"]}
